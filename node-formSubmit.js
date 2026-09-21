@@ -24,8 +24,8 @@ const server = http.createServer((req, res) => {
           const data = `username: ${username}, \npassword: ${password}`;
           fs.writeFile('message.txt',data,(err)=>{
             if(err){
-              res.writeHead(500,{'Content-Type':'text/plain'})
-              res.end('Internal server error')
+              res.writeHead(500,{'Content-Type':'text/'})
+              res.end('internal server error')
             }
       // fs.writeFile('data.txt',body,(err) =>{
       //   if(err){
